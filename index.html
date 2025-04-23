@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Contribuições</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Contribuições</h1>
+        <input type="file" id="fileInput" accept="application/pdf">
+        <button onclick="processPDF()">Carregar e Calcular</button>
+        <h3>Digite os nomes das contribuições que deseja calcular (separados por vírgula)</h3>
+        <input type="text" id="contribuicoes" placeholder="Ex: AMBEC, SINDICAPI, SINDINAPI">
+        <div id="output"></div>
+    </div>
+
+    <!-- Adicionando a informação sobre o desenvolvedor -->
+    <footer>
+        <p>Desenvolvido por Samuel Carapina</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
